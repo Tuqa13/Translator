@@ -4,6 +4,17 @@ from difflib import get_close_matches, SequenceMatcher
 data = json.load(open("data.json"))
 keys = data.keys()
 
+# Instead of using json file we can use MySQL:
+# import mysql.connector
+
+# con = mysql.connector.connect(
+# user = "ardit700_student",
+# password = "ardit700_student",
+# host = "108.167.140.122",
+# database = "ardit700_pm1database"
+# )
+
+# cursor = con.cursor()
 
 def display(lst):
     for i in range(len(lst)):
